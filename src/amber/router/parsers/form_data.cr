@@ -1,5 +1,5 @@
-module Parser
-  class FormData
+module Parsers
+  module FormData
     def self.parse(request : HTTP::Request)
       parse_part(request.body).not_nil!
     end
